@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+
+    defaultConfig {
+        applicationId "demo.huangli.mydemosnew"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+// 对自家aar文件的依赖，相对目录即可，多个地方依赖的aar文件，统一放到‘../aars’目录
+repositories {
+    flatDir {
+        dirs 'libs', '../aars'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.1'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'org.greenrobot:greendao:3.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile 'com.facebook.rebound:rebound:0.3.8'
+    compile 'com.squareup.okhttp3:okhttp:3.7.0'
+    compile 'com.squareup.okio:okio:1.5.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    compile 'com.github.bumptech.glide:glide:3.8.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+    compile project(':poptextscreen')
+    compile project(path: ':poptextscreen')
+    compile project(':rxjava')
+//    compile project(':rxjava2')
+    compile("com.github.hotchemi:permissionsdispatcher:2.4.0") {
+        // if you don't use android.app.Fragment you can exclude support for them
+        exclude module: "support-v13"
+    }
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:2.4.0"
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:text="RxJava示范"
+        android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:id="@+id/image_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_rx_java_basic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rxJava基本方式创建"
+        />
+
+    <Button
+        android:id="@+id/btn_rx_java_basic_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rxJava基本方式Demo"
+        />
+    <Button
+        android:id="@+id/btn_rx_java_scheduler_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rxJava使用线程调度"
+        />
+    <Button
+        android:id="@+id/btn_rx_java_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rxJava使用变换"
+        />
+
+    <Button
+        android:id="@+id/btn_rx_java_flat_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rxJava使用平铺变换"
+        />
+
+    <Button
+        android:id="@+id/btn_rx_java_multiple_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rxJava多次变换"
+        />
+
+    <Button
+        android:id="@+id/btn_rx_java_do_on_subscribe"
+        android:text="使用doOnSubscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_rx_java_retrofit"
+        android:text="rxJava场景应用retrofit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_rx_java_rxbinding"
+        android:text="rxJava场景应用rxBinding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_rx_java_rxbus"
+        android:text="rxJava场景应用rxBus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

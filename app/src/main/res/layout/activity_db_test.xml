@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_put_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Put Information into a Database"/>
+
+    <Button
+        android:id="@+id/btn_read_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Information from a Database"/>
+
+    <Button
+        android:id="@+id/btn_delete_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Information from a Database"/>
+
+    <Button
+        android:id="@+id/btn_update_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update a Database"/>
+</LinearLayout>

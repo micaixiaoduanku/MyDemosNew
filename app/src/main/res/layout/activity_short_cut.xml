@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnClickCreateShortCut"
+        android:text="创建快捷方式"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnClickHideAppIcon"
+        android:text="隐藏应用图标"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnClickShowAppIcon"
+        android:text="显示应用图标"/>
+
+    <View
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建动态快捷方式"
+        android:id="@+id/btn_dynamic"
+        />
+</LinearLayout>

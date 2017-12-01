@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_send_stringrequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StringRequest测试"/>
+
+    <Button
+        android:id="@+id/btn_send_jsonrequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JsonRequest测试"/>
+
+    <Button
+        android:id="@+id/btn_send_xmlrequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XMLRequest测试"/>
+
+    <Button
+        android:id="@+id/btn_send_gsonrequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GSONRequest测试"/>
+
+    <Button
+        android:id="@+id/btn_load_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加载网络图片"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

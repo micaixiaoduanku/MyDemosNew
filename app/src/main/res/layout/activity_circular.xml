@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+            <demo.huangli.mydemosnew.ui_set_1.circularimage.CircularImage
+                android:id="@+id/cover_user_photo"
+                android:layout_width="74.0dip"
+                android:layout_height="74.0dip"
+                android:layout_centerInParent="true"
+                ></demo.huangli.mydemosnew.ui_set_1.circularimage.CircularImage>
+</LinearLayout>

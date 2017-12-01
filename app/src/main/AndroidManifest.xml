@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:tools="http://schemas.android.com/tools"
+          package="demo.huangli.mydemosnew"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyALiveApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <data android:host=".MainActivity"
+                      android:scheme="demo.huangli.mydemosnew"
+                      tools:ignore="AppLinkUrlError"/>
+            </intent-filter>
+        </activity>
+
+        <!-- bug set 1 相关 -->
+        <activity android:name=".bug_set_1.EntranceBugSet1Activity"/>
+        <activity android:name=".bug_set_1.bug_fragment_state_loss.FragmentStateLossActivity"/>
+        <activity android:name=".bug_set_1.bug_app_oncreate_run_2_times.AppRunActivity"/>
+        <activity android:name=".bug_set_1.no_main_process_invoke_getapplicationcontext.NoMainProcessActivity"/>
+        <activity android:name=".bug_set_1.bug_out_of_mem.OutOfMemActivity"/>
+        <activity android:name=".bug_set_1.bug_date_format.BugDateFormatActivity"/>
+
+        <service
+            android:name=".bug_set_1.bug_app_oncreate_run_2_times.BgService"
+            android:process=":bg"/>
+        <service
+            android:name=".bug_set_1.no_main_process_invoke_getapplicationcontext.NoMainProcessService"
+            android:process=":no_process"/>
+
+        <!-- ui set 1 相关 -->
+        <activity android:name=".ui_set_1.EntranceUISet1Activity"/>
+        <activity android:name=".ui_set_1.gif.GifActivity"/>
+        <activity android:name=".ui_set_1.circularimage.CircularActivity"/>
+        <activity android:name=".ui_set_1.spannablestring.SpannableStringActivity"/>
+        <activity android:name=".ui_set_1.recyclerview.RecyclerViewActivity"/>
+        <activity android:name=".ui_set_1.screenswitch.TestActivityA">
+        </activity>
+        <activity android:name=".ui_set_1.screenswitch.TestActivityB"/>
+        <activity android:name=".ui_set_1.screenswitch.TestActivityC"/>
+        <activity android:name=".ui_set_1.arabiauifit.ArabiaufitActivity"/>
+        <activity android:name=".ui_set_1.fragmentdynamic.FragmentLoadActivity"/>
+        <activity android:name=".ui_set_1.constraintlayout.ConstraintActivity"/>
+        <activity android:name=".ui_set_1.reboundAnim.ReBoundAnimActivity"/>
+        <activity android:name=".ui_set_1.viewflipper.ViewFlipperActivity"/>
+        <activity android:name=".ui_set_1.scroller.ScrollerTestActivity"/>
+        <activity android:name=".ui_set_1.bottomsheet.BottomSheetActivity"/>
+        <activity android:name=".ui_set_1.immersingstatusbar.ImmersingStatusBarActivity"/>
+        <activity android:name=".ui_set_1.immersingstatusbar.FirstActivity"/>
+        <activity android:name=".ui_set_1.glide.GlideActivity"/>
+
+        <!-- logic set 1相关 -->
+        <activity android:name=".logic_set_1.EntranceLogicSet1Activity"/>
+        <activity android:name=".logic_set_1.volley.VolleyActivity"/>
+        <activity android:name=".logic_set_1.keepalive.KeepAliveActivity"/>
+        <activity android:name=".logic_set_1.greendao.GreenDaoActivity"/>
+        <activity android:name=".logic_set_1.batteryinfo.BatteryInfoActivity"/>
+        <activity android:name=".logic_set_1.permissions6dot0.PermissionsActivity"/>
+        <activity android:name=".logic_set_1.permissions6dot0.DialogPermissionActivity"/>
+        <activity android:name=".logic_set_1.broadcast.BroadCastTestActivity"/>
+        <activity android:name=".logic_set_1.activityrelationshipfragment.FragmentRelationShipActivity"/>
+        <activity android:name=".logic_set_1.gsonandjson.GsonJsonActivity"/>
+        <activity android:name=".logic_set_1.createshortcut.CreateHideShortCutActivity"/>
+        <activity android:name=".logic_set_1.alarmmanager.AlarmManagerTestActivity"/>
+        <activity android:name=".logic_set_1.cryptor.JNCryptorActivity"/>
+        <activity android:name=".logic_set_1.annotation.AnnotationActivity"/>
+        <activity android:name=".logic_set_1.balancedtree.BalanceTreeActivity"/>
+
+        <service android:name=".logic_set_1.alarmmanager.TaskService"/>
+
+
+        <service android:name=".logic_set_1.keepalive.AliveService"/>
+
+        <activity android:name=".logic_set_1.db.DbTestActivity"/>
+        <activity android:name=".ui_set_1.meminfo.MemInfoActivity"/>
+        <activity android:name=".logic_set_1.accessibility.MyAccessibilityActivity"/>
+
+        <activity android:name=".logic_set_1.strictmode.StrictModeActivity"/>
+        <activity android:name=".ui_set_1.appicon.AppIconActivity"/>
+
+        <activity android:name=".logic_set_1.parentchildtest.ParentChildTestActivity"/>
+        <activity android:name=".logic_set_1.okhttp.OkHttpActivity"/>
+        <activity android:name=".logic_set_1.algorithm.AlgorithmActivity"/>
+        <activity android:name=".logic_set_1.retrofit.RetrofitActivity"/>
+        <activity android:name=".logic_set_1.mvpdemo.MvpDemoActivity"/>
+        <activity android:name=".logic_set_1.networkstate.NetWorkStateActivity"/>
+        <activity android:name=".logic_set_1.proxy.ProxyActivity"/>
+
+
+        <activity
+            android:name=".ui_set_1.translucent.ColorTranslucentBarActivity"
+            android:theme="@style/ColorTranslucentTheme"/>
+        <activity
+            android:name=".ui_set_1.translucent.ImageTranslucentBarActivity"
+            android:theme="@style/ImageTranslucentTheme"/>
+
+        <activity android:name=".logic_set_1.notiservice.NotiAggregationActivity"/>
+        <activity android:name=".logic_set_1.phoneboost.PhoneBoostActivity"/>
+        <activity android:name=".ui_set_1.swiperefreshlayout.SwipeRefreshLayoutActivity"/>
+        <activity android:name=".ui_set_1.viewgroup.CustomViewGroupActivity"/>
+
+        <activity android:name=".ui_set_1.gradientimage.ImageGradientActivity"/>
+
+        <activity android:name=".ui_set_1.gesturedetector.GestureActivity"/>
+
+        <activity android:name=".logic_set_1.threadstop.ThreadStopActivity"/>
+
+        <activity android:name="demo.huangli.mydemosnew.ui_set_1.bitmaprecycle.BitmapRecycleActivity"
+            />
+
+        <receiver android:name=".logic_set_1.phoneboost.BootBroadCastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <category android:name="android.intent.category.ALTERNATIVE"></category>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".ui_set_1.meminfo.StatMemService"/>
+
+        <service
+            android:name=".logic_set_1.accessibility.MyAppKillService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config"/>
+        </service>
+
+        <service
+            android:name="demo.huangli.mydemosnew.logic_set_1.notiservice.NotificationMonitor"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
