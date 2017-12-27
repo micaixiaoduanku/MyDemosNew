@@ -12,5 +12,7 @@ public class GreenDaoActivity extends BaseActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        System.out.print("hello world");
     }
 }

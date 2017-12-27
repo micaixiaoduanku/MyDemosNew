@@ -19,6 +19,12 @@ public class ProxyHandler implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         if (target instanceof RentSubjectImpl){
+            System.out.println("method "+method.getName());
+            if (args != null){
+                for (Object obj : args){
+                    System.out.println("args "+obj.toString());
+                }
+            }
             System.out.println("按照要求寻找 要求大小15平方，在内环里面，独立卫生间，精装修");
         }
         return method.invoke( target, args);

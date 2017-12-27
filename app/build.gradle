@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "demo.huangli.mydemosnew"
-        minSdkVersion 17
+        minSdkVersion 19
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -52,6 +52,9 @@ dependencies {
         // if you don't use android.app.Fragment you can exclude support for them
         exclude module: "support-v13"
     }
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.alibaba:fastjson:1.2.41'
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
     annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:2.4.0"

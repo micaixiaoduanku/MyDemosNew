@@ -5,5 +5,5 @@ package demo.huangli.mydemosnew.logic_set_1.proxy;
  */
 
 public interface RentSubjectImpl {
-    void rentHouse();
+    void rentHouse(String arg);
 }

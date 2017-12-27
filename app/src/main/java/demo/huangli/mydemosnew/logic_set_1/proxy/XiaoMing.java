@@ -6,7 +6,7 @@ package demo.huangli.mydemosnew.logic_set_1.proxy;
 
 public class XiaoMing implements RentSubjectImpl {
     @Override
-    public void rentHouse() {
+    public void rentHouse(String arg) {
         System.out.println("交纳房租");
     }
 }

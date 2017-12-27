@@ -121,10 +121,17 @@
 
         <activity android:name=".ui_set_1.gesturedetector.GestureActivity"/>
 
+        <activity android:name=".ui_set_1.web.WebLoadActivity"/>
+        <activity android:name=".ui_set_1.web.EntranceWebActivity"/>
+        <activity android:name=".ui_set_1.web.WebJSActivityWayActivity"/>
+        <activity android:name=".ui_set_1.web.JsWebActivityWayActivity"/>
+
         <activity android:name=".logic_set_1.threadstop.ThreadStopActivity"/>
 
         <activity android:name="demo.huangli.mydemosnew.ui_set_1.bitmaprecycle.BitmapRecycleActivity"
             />
+
+        <activity android:name="demo.huangli.mydemosnew.logic_set_1.fastjson.FastJsonActivity"/>
 
         <receiver android:name=".logic_set_1.phoneboost.BootBroadCastReceiver">
             <intent-filter>

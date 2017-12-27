@@ -24,6 +24,7 @@ import demo.huangli.mydemosnew.ui_set_1.translucent.ColorTranslucentBarActivity;
 import demo.huangli.mydemosnew.ui_set_1.translucent.ImageTranslucentBarActivity;
 import demo.huangli.mydemosnew.ui_set_1.viewflipper.ViewFlipperActivity;
 import demo.huangli.mydemosnew.ui_set_1.viewgroup.CustomViewGroupActivity;
+import demo.huangli.mydemosnew.ui_set_1.web.EntranceWebActivity;
 import li.huang.poptextscreen.PopScreenModule;
 
 /**
@@ -176,6 +177,12 @@ public class EntranceUISet1Activity extends BaseListActivity {
             @Override
             public void itemClicked() {
                 intentActivity(BitmapRecycleActivity.class);
+            }
+        });
+        addListviewItem("WebView的使用", new ItemClickListener() {
+            @Override
+            public void itemClicked() {
+                intentActivity(EntranceWebActivity.class);
             }
         });
     }

@@ -12,6 +12,7 @@ import demo.huangli.mydemosnew.logic_set_1.broadcast.BroadCastTestActivity;
 import demo.huangli.mydemosnew.logic_set_1.createshortcut.CreateHideShortCutActivity;
 import demo.huangli.mydemosnew.logic_set_1.cryptor.JNCryptorActivity;
 import demo.huangli.mydemosnew.logic_set_1.db.DbTestActivity;
+import demo.huangli.mydemosnew.logic_set_1.fastjson.FastJsonActivity;
 import demo.huangli.mydemosnew.logic_set_1.greendao.GreenDaoActivity;
 import demo.huangli.mydemosnew.logic_set_1.keepalive.KeepAliveActivity;
 import demo.huangli.mydemosnew.logic_set_1.mvpdemo.MvpDemoActivity;
@@ -200,6 +201,12 @@ public class EntranceLogicSet1Activity extends BaseListActivity {
             @Override
             public void itemClicked() {
                 intentActivity(ProxyActivity.class);
+            }
+        });
+        addListviewItem("FastJson", new ItemClickListener() {
+            @Override
+            public void itemClicked() {
+                intentActivity(FastJsonActivity.class);
             }
         });
     }
